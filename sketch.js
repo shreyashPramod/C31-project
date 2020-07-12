@@ -7,6 +7,7 @@ var ground1;
 var particles = [];
 var plinkos = [];
 
+var divisions=[];
 var divisionHeight=300;
 
 function preload()
@@ -20,9 +21,10 @@ function setup() {
   
   ground1 = new Ground(250,740,500,10);
   ground2 = new Ground(1,365,10,730);
-  ground3 = new Ground(480,365,10,730)
+  ground3 = new Ground(480,365,10,730);
 
-  for (var k = 0; k <=width; k = k + 80) {
+ for (var k = 0; k <=width; k = k + 80)
+  {
     divisions.push(new Divisions(k,height-divisionHeight/2, 10, divisionHeight));
   }
 
